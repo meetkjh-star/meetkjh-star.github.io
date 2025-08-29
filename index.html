@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>포트폴리오 | Your Name</title>
-  <meta name="description" content="Your Name\의 포트폴리오 – 프로젝트, 블로그, 경력과 스킬 소개." />
+  <meta name="description" content="Your Name의 포트폴리오 – 프로젝트, 블로그, 경력과 스킬 소개." />
   <link rel="canonical" href="https://yourname.github.io/" />
   <meta name="color-scheme" content="light dark" />
   <meta name="theme-color" content="#0ea5e9" />
@@ -98,6 +98,7 @@
 
     /* Focus styles for a11y */
     :focus-visible { outline: 3px solid var(--brand); outline-offset: 3px; border-radius: .2rem; }
+      .avatar { width:96px; height:96px; border-radius:999px; object-fit:cover; border:1px solid var(--line); }
   </style>
 </head>
 <body>
@@ -175,7 +176,14 @@
     <!-- About -->
     <section class="section" id="about" aria-labelledby="about-title">
       <div class="container">
-        <h2 id="about-title">소개</h2>
+        $1
+        <div class="profile" style="display:flex; gap:1rem; align-items:center; margin:.5rem 0 1rem;">
+          <img class="avatar" src="assets/img/img.jpg" alt="Your Name 프로필 사진" width="96" height="96" loading="lazy" />
+          <div>
+            <strong>Your Name</strong><br>
+            <span class="muted">Product / Frontend</span>
+          </div>
+        </div>
         <div class="grid" style="grid-template-columns: 1.1fr .9fr;">
           <div>
             <p>5+년의 제품/프론트엔드 경험. 데이터에 기반한 문제정의와 실험 주도 문화에 익숙합니다. 접근성, 성능, SEO, 디자인 시스템에 관심이 많습니다.</p>
